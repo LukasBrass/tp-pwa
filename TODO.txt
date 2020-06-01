@@ -1,0 +1,99 @@
+Index des consignes
+
+/assets/js/trending.js
+(96) 1a - Set up a new URL object to use Giphy trending endpoint
+(98) 1b - Set proper query parameters to the newly created URL object
+(101) 1c - Fetch GIFs from Giphy Trending endpoint
+(103) 1d - If response is not valid, return
+(105) 1e - Convert Giphy response to json
+(107) 1f - Use 'response.data' in the constant 'gifs' instead of an empty array
+(121) 1g - Call the function buildGIFCard with proper parameters
+(125) 1h - Display a message in console in case of error
+
+sw.js
+(6) 2a - Declare files and URLs to cache at Service Worker installation
+(13) 2b - On install, add app shell files to cache
+(15) 2c - On activation, remove obsolete caches
+(17) 2d - On intercepted fetch, use the strategy of your choice to respond to requests
+
+index.html
+(174) 3a - Check if navigator supports Service Workers
+(176) 3b - Register your service worker (located in /sw.js)
+(178) 3c - If not, display a message in console
+
+saved.html
+(172) 3d - Check if navigator supports Service Workers
+(174) 3e - Register your service worker (located in /sw.js)
+(176) 3f - If not, display a message in console
+
+search.html
+(187) 3g - Check if navigator supports Service Workers
+(189) 3h - Register your service worker (located in /sw.js)
+(191) 3i - If not, display a message in console
+
+index.html
+(167) 4a - Declare a new local database using Dexie named 'ILoveGifs' (case-sensitive)
+(170) 4b - Declare a table named 'gifs' that stores the following columns: 'id', 'title', 'imageUrl', 'videoUrl'
+
+saved.html
+(165) 4c - Declare a new local database using Dexie named 'ILoveGifs' (case-sensitive)
+(168) 4d - Declare a table named 'gifs' that stores the following columns: 'id', 'title', 'imageUrl', 'videoUrl'
+
+search.html
+(180) 4e - Declare a new local database using Dexie named 'ILoveGifs' (case-sensitive)
+(183) 4f - Declare a table named 'gifs' that stores the following columns: 'id', 'title', 'imageUrl', 'videoUrl'
+
+/assets/js/saved.js
+(78) 5a - Open IndexedDB's database
+(80) 5b - Fetch saved GIFs from local database and display them (use function buildGIFCard)
+(11) 6a - Open IndexedDB's database
+(13) 6b - Remove GIF from local database using its ID
+(15) 6c - Remove GIF media (image and video) from cache
+
+index.html
+(9) 7a - Declare a theme color in meta (use #f44336 or your favorite color)
+
+saved.html
+(10) 7b - Declare a theme color in meta (use #f44336 or your favorite color)
+
+search.html
+(10) 7c - Declare a theme color in meta (use #f44336 or your favorite color)
+
+manifest.webmanifest
+(1) 8a - Declare a manifest. It must contain the following fields:
+               - name
+               - short_name
+               - description
+               - icons (use dimensions 192x192 and 512x512 only)
+               - orientation (portrait mode)
+               - start_url
+               - background color
+               - display (standalone mode)
+               - scope
+               - theme_color
+               - Two shortcuts: One to access search easily, one to access saved GIFs easily
+
+index.html
+(96) 8b - Use Manifest here by using a <link>
+
+saved.html
+(97) 8c - Use Manifest here by using a <link>
+
+search.html
+(97) 8d - Use Manifest here by using a <link>
+
+/assets/js/search.js
+(107) 9a - Set up a new URL object to use Giphy search endpoint
+(109) 9b - Set proper query parameters to the newly created URL object
+(112) 9c - Fetch GIFs from Giphy Search endpoint
+(114) 9d - If response is not valid, return
+(116) 9e - Convert Giphy response to json
+(118) 9f - Use 'response.data' in the constant 'gifs' instead of an empty array
+(132) 9g - Call the function buildGIFCard with proper parameters
+(136) 9h - Display a message in console in case of error
+(34) 9i - Open IndexedDB's database
+(36) 9j - Save GIF data into IndexedDB's database
+(38) 9k - Put GIF media (image and video) into a cache named "gif-images"
+(123) 9l - Open IndexedDB's database
+(127) 9m - Get GIF from IndexedDB's database, by its ID
+(129) 9n - Create a boolean `isSaved` to check if the GIF was already saved

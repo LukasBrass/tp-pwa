@@ -1,0 +1,12 @@
+- [ ] TODO: 8a - Declare a manifest. It must contain the following fields:
+        - name
+        - short_name
+        - description
+        - icons (use dimensions 192x192 and 512x512 only)
+        - orientation (portrait mode)
+        - start_url
+        - background color
+        - display (standalone mode)
+        - scope
+        - theme_color
+        - Two shortcuts: One to access search easily, one to access saved GIFs easily

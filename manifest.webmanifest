@@ -1,0 +1,43 @@
+{
+  "short_name": "I Love Gifs",
+  "name": "I Love Gifs, especially cats gifs",
+  "description": "If you like cats gifs you can use this app too !",
+  "icons": [
+    {
+      "src": "assets/images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "orientation": "portrait",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#6e6e6e",
+  "shortcuts": [
+    {
+      "name": "Saved cats gifs",
+      "short_name": "Saved",
+      "description": "Here you can watch your saved cats gifs",
+      "url": "/saved",
+      "icons": [
+        { "src": "/assets/images/icon-192x192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Search cats gifs",
+      "short_name": "Search",
+      "description": "Here you can search the best cats gifs",
+      "url": "/search",
+      "icons": [
+        { "src": "/assets/images/icon-192x192.png", "sizes": "192x192" }
+      ]
+    }
+  ]
+}

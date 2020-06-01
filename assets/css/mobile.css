@@ -1,0 +1,41 @@
+#desktop-menu-bar {
+  display: none;
+}
+
+#mobile-tab-bar {
+  display: block;
+}
+
+#mobile-tab-bar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+#mobile-tab-bar ul > li > a {
+  align-items: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+#mobile-tab-bar ul > li.active > a.trending-tabitem {
+  color: #d32f2f;
+}
+
+#mobile-tab-bar ul > li.active > a.search-tabitem {
+  color: #2e7d32;
+}
+
+#mobile-tab-bar ul > li.active > a.saved-tabitem {
+  color: #1976d2;
+}
+
+#mobile-tab-bar ul > li > a svg {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
